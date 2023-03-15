@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     #apps
     'app',
     'autenticacao',
+    'objetos',
+    'emprestimos',
     #validarCPF
     'cpf_field', 
     #rest-framework
