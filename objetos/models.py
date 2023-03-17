@@ -35,6 +35,9 @@ class Objetos(TrackingModel):
     status = models.CharField(max_length=15, choices=STATUS_CHOICES, default='Disponível')
     motivo_indisponivel = models.TextField()
 
+    def __str__(self):
+        return self.codigo
+
 @receiver(pre_save, sender=Objetos)
 def check_product_description(sender, instance, **kwargs):
     if not instance.codigo:

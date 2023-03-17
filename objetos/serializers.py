@@ -10,3 +10,5 @@ class ObjetosSerializersCreate(serializers.ModelSerializer):
     class Meta:
         model = Objetos
         fields = 'estado', 'tipo', 'observacao', 'status'
+
+    
